@@ -5,7 +5,7 @@ body {
 
 a {
   color: var(--ghost);
-  text-decoration: none;
+  text-decoration: underline;
 
   &:not(.active):hover {
     text-decoration: line-through;
