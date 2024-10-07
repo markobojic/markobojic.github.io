@@ -1,0 +1,13 @@
+body {
+  background-color: var(--dark);
+  color: var(--ghost);
+}
+
+a {
+  color: var(--ghost);
+  text-decoration: none;
+
+  &:not(.active):hover {
+    text-decoration: line-through;
+  }
+}
