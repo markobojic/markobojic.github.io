@@ -1,0 +1,23 @@
+:host {
+  padding-top: 4rem;
+  display: block;
+
+  @media screen and (min-width: 1024px) {
+    height: calc(100vh - 94px);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .about {
+      width: 25%;
+    }
+  }
+}
+
+.name {
+  margin-bottom: 2rem;
+}
+
+.position {
+  margin-bottom: 1rem;
+}
