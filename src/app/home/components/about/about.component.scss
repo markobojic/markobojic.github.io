@@ -3,7 +3,7 @@
   display: block;
 
   @media screen and (min-width: 1024px) {
-    height: calc(100vh - 94px);
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-around;

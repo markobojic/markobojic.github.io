@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ArrowIconComponent } from '../arrow-icon/arrow-icon.component';
+import { ArrowIconComponent } from './arrow-icon/arrow-icon.component';
 
 @Component({
   selector: 'app-about',
