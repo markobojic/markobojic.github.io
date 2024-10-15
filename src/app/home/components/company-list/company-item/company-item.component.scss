@@ -1,0 +1,28 @@
+:host {
+  background-color: var(--ghost);
+  width: 10rem;
+  height: 4rem;
+
+  @media screen and (min-width: 570px) {
+    width: 15rem;
+    height: 6rem;
+  }
+
+  .company-item {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+    overflow: hidden;
+
+    &.disabled {
+      cursor: default;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

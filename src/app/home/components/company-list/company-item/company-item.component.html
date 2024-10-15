@@ -1,7 +1,13 @@
-<div class="company-wrapper">
+<a
+  class="company-item"
+  [href]="company.isNDA ? null : company.url"
+  [attr.target]="company.isNDA ? null : '_blank'"
+  [class.disabled]="company.isNDA"
+  (click)="company.isNDA ? $event.preventDefault() : null"
+>
+  <img [src]="'assets/' + company.imgSrc" [alt]="company.name" />
   <!-- image -->
   <!-- name -->
   <!-- imageURL -->
   <!-- mozda ces samo name da posaljes pa na osnovu toga gadajm url u asset folderu -->
-  <p>{{ company.name }}</p>
-</div>
+</a>

@@ -3,7 +3,9 @@
     I'm proud to have collaborated with<br />
     awesome companies:
   </h3>
-  @for (company of companies; track $index) {
-  <app-company-item [company]="company"></app-company-item>
-  }
+  <div class="company-list">
+    @for (company of companies; track $index) {
+    <app-company-item [company]="company"></app-company-item>
+    }
+  </div>
 </div>
