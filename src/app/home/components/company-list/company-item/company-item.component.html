@@ -1,13 +1,11 @@
 <a
   class="company-item"
-  [href]="company.isNDA ? null : company.url"
-  [attr.target]="company.isNDA ? null : '_blank'"
-  [class.disabled]="company.isNDA"
-  (click)="company.isNDA ? $event.preventDefault() : null"
+  [href]="company.nda ? null : company.url"
+  [attr.target]="company.nda ? null : '_blank'"
+  [class.disabled]="company.nda"
+  (click)="company.nda ? $event.preventDefault() : null"
 >
   <img [src]="'assets/' + company.imgSrc" [alt]="company.name" />
-  <!-- image -->
-  <!-- name -->
-  <!-- imageURL -->
-  <!-- mozda ces samo name da posaljes pa na osnovu toga gadajm url u asset folderu -->
+
+  <p class="tooltip-label" *ngIf="company.nda">{{ company.nda }} *</p>
 </a>

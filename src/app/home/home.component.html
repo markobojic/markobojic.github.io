@@ -1,2 +1,4 @@
-<app-about></app-about>
-<app-company-list></app-company-list>
+<app-about (scrollToCompanies)="onScroll()"></app-about>
+<div #companies>
+  <app-company-list></app-company-list>
+</div>

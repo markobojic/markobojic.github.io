@@ -1,9 +1,9 @@
 :host {
   background-color: var(--ghost);
-  width: 10rem;
-  height: 4rem;
+  width: 11rem;
+  height: 4.5rem;
 
-  @media screen and (min-width: 570px) {
+  @media screen and (min-width: 624px) {
     width: 15rem;
     height: 6rem;
   }
@@ -24,5 +24,17 @@
       height: 100%;
       object-fit: contain;
     }
+
+    &:hover {
+      text-decoration: none;
+    }
   }
+}
+
+.tooltip-label {
+  font-size: 0.75rem;
+  margin-top: 3px;
+  line-height: 0;
+  color: var(--dark);
+  text-align: center;
 }

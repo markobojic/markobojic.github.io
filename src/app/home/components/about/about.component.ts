@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, output } from '@angular/core';
 import { ArrowIconComponent } from './arrow-icon/arrow-icon.component';
 
 @Component({
@@ -8,4 +8,10 @@ import { ArrowIconComponent } from './arrow-icon/arrow-icon.component';
   templateUrl: './about.component.html',
   styleUrl: './about.component.scss',
 })
-export class AboutComponent {}
+export class AboutComponent {
+  scrollToCompanies = output();
+
+  onScrollToCompanies() {
+    this.scrollToCompanies.emit();
+  }
+}

@@ -11,7 +11,7 @@ export const COMPANIES_DATA: Company[] = [
     name: 'LSEG',
     imgSrc: 'stock-market.svg',
     url: '',
-    isNDA: true,
+    nda: 'Stock Market',
   },
   {
     name: 'CCBill',
