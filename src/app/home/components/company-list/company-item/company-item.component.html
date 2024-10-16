@@ -4,6 +4,11 @@
   [attr.target]="company.nda ? null : '_blank'"
   [class.disabled]="company.nda"
   (click)="company.nda ? $event.preventDefault() : null"
+  [appTooltip]="
+    company.nda
+      ? 'Due to confidentiality agreements, specific client details cannot be disclosed.'
+      : null
+  "
 >
   <img [src]="'assets/' + company.imgSrc" [alt]="company.name" />
 
