@@ -1,0 +1,32 @@
+<div class="carousel">
+  <div
+    class="carousel-wrapper"
+    #carouselContainer
+    (mousedown)="onDragStart($event)"
+    (touchstart)="onDragStart($event)"
+    (mousemove)="onDragMove($event)"
+    (touchmove)="onDragMove($event)"
+    (mouseup)="onDragEnd()"
+    (touchend)="onDragEnd()"
+  >
+    <div
+      class="carousel-track"
+      [style.transform]="'translateX(' + translateX + 'px)'"
+    >
+      <ng-content></ng-content>
+    </div>
+  </div>
+
+  <!-- Arrows -->
+  <button class="prev" (click)="prevSlide()">&#10094;</button>
+  <button class="next" (click)="nextSlide()">&#10095;</button>
+
+  <!-- Dots -->
+  <div class="dots">
+    <span
+      *ngFor="let slide of slides; let i = index"
+      [class.active]="i === currentSlide"
+      (click)="goToSlide(i)"
+    ></span>
+  </div>
+</div>

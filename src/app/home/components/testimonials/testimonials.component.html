@@ -1,4 +1,17 @@
-<h3>
-  People I've worked with have said<br />
-  some nice things...
-</h3>
+<div class="testimonials">
+  <h3>
+    People I've worked with have said<br />
+    some nice things...
+  </h3>
+  <app-carousel>
+    <div *ngFor="let testimonial of testimonials" #slide>
+      <app-testimonial-item
+        [name]="testimonial.name"
+        [feedback]="testimonial.feedback"
+        [position]="testimonial.position"
+        [imageSrc]="testimonial.imageSrc"
+      >
+      </app-testimonial-item>
+    </div>
+  </app-carousel>
+</div>

@@ -1,0 +1,27 @@
+.testimonial-item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+
+  .testimonial-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+  }
+
+  .feedback {
+    font-style: italic;
+  }
+
+  .name {
+    font-size: 1.2em;
+    margin: 10px 0;
+  }
+
+  .position {
+    color: #555;
+  }
+}
