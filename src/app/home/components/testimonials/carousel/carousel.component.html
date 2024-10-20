@@ -2,12 +2,14 @@
   <div
     class="carousel-wrapper"
     #carouselContainer
-    (mousedown)="onDragStart($event)"
     (touchstart)="onDragStart($event)"
-    (mousemove)="onDragMove($event)"
     (touchmove)="onDragMove($event)"
-    (mouseup)="onDragEnd()"
     (touchend)="onDragEnd()"
+    (mousedown)="onDragStart($event)"
+    (mousemove)="onDragMove($event)"
+    (mouseup)="onDragEnd()"
+    (mouseleave)="onDragEnd()"
+    (touchmove)="$event.preventDefault()"
   >
     <div
       class="carousel-track"

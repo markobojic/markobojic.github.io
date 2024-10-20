@@ -5,7 +5,9 @@ import {
   ContentChildren,
   ElementRef,
   HostListener,
+  inject,
   QueryList,
+  Renderer2,
   ViewChild,
 } from '@angular/core';
 
@@ -17,6 +19,7 @@ import {
   styleUrl: './carousel.component.scss',
 })
 export class CarouselComponent implements AfterContentInit {
+  renderer = inject(Renderer2);
   @ContentChildren('slide') slides!: QueryList<ElementRef>;
   @ViewChild('carouselContainer', { static: true })
   carouselContainer!: ElementRef;
@@ -27,6 +30,9 @@ export class CarouselComponent implements AfterContentInit {
   startX = 0;
   translateX = 0;
   slideWidth = 0;
+  currentTranslate = 0;
+  prevTranslate = 0;
+  animationID: any;
 
   ngAfterContentInit() {
     this.totalSlides = this.slides.length;
@@ -63,35 +69,77 @@ export class CarouselComponent implements AfterContentInit {
     this._updateSlidePosition();
   }
 
+  // Smooth transition for dragging
+  private setSlidePosition() {
+    this.renderer.setStyle(
+      this.carouselContainer.nativeElement,
+      'transform',
+      `translateX(${this.currentTranslate}px)`
+    );
+  }
+
   // Swipe gesture handling
   onDragStart(event: any) {
     this.isDragging = true;
-    this.startX = event.touches ? event.touches[0].clientX : event.clientX;
+    this.startX = event.type.includes('touch')
+      ? event.touches[0].clientX
+      : event.clientX;
+    this.prevTranslate = this.currentTranslate;
+    cancelAnimationFrame(this.animationID);
   }
 
   onDragMove(event: any) {
     if (!this.isDragging) return;
-    const currentX = event.touches ? event.touches[0].clientX : event.clientX;
-    const deltaX = currentX - this.startX;
 
-    const width = this.carouselContainer.nativeElement.offsetWidth;
-    this.translateX = -this.currentSlide * width + deltaX;
+    const currentX = event.type.includes('touch')
+      ? event.touches[0].clientX
+      : event.clientX;
+    const deltaX = currentX - this.startX;
+    this.currentTranslate = this.prevTranslate + deltaX;
+    this.setSlidePosition();
   }
 
   onDragEnd() {
     this.isDragging = false;
+
+    // Check if drag distance is enough to switch slide
+    const movedBy = this.currentTranslate - this.prevTranslate;
+    if (movedBy < -100 && this.currentSlide < this.totalSlides - 1) {
+      this.currentSlide++;
+    } else if (movedBy > 100 && this.currentSlide > 0) {
+      this.currentSlide--;
+    }
+
     this._updateSlidePosition();
   }
 
   private _updateSlidePosition() {
     const width = this.carouselContainer.nativeElement.offsetWidth;
-    this.translateX = -this.currentSlide * width;
+    this.currentTranslate = -this.currentSlide * width;
+    this.setSlidePositionWithAnimation();
+  }
+
+  private setSlidePositionWithAnimation() {
+    this.renderer.setStyle(
+      this.carouselContainer.nativeElement,
+      'transition',
+      'transform 0.5s ease'
+    );
+    this.renderer.setStyle(
+      this.carouselContainer.nativeElement,
+      'transform',
+      `translateX(${this.currentTranslate}px)`
+    );
   }
 
   private _calculateSlideWidth() {
     this.slideWidth = this.carouselContainer.nativeElement.offsetWidth;
     this.slides.forEach((slide) => {
-      slide.nativeElement.style.width = `${this.slideWidth}px`;
+      this.renderer.setStyle(
+        slide.nativeElement,
+        'width',
+        `${this.slideWidth}px`
+      );
     });
   }
 }
