@@ -1,8 +1,12 @@
 <div class="testimonial-item">
-  <img [src]="imageSrc" alt="{{ name }}" class="testimonial-image" />
+  <img
+    [src]="testimonial.imageSrc"
+    alt="{{ testimonial.name }}"
+    class="testimonial-image"
+  />
   <div class="testimonial-content">
-    <p class="feedback">"{{ feedback }}"</p>
-    <h4 class="name">{{ name }}</h4>
-    <p class="position">{{ position }}</p>
+    <p class="feedback">"{{ testimonial.feedback }}"</p>
+    <h4>{{ testimonial.name }}</h4>
+    <h5 class="position">{{ testimonial.position }}</h5>
   </div>
 </div>

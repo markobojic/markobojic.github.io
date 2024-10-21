@@ -4,33 +4,33 @@ import { Company } from './company.model';
 export const COMPANIES_DATA: Company[] = [
   {
     name: 'Synechron',
-    imgSrc: 'synechron.svg',
+    imgSrc: 'companies/synechron.svg',
     url: 'https://www.synechron.com/',
   },
   {
     name: 'LSEG',
-    imgSrc: 'stock-market.svg',
+    imgSrc: 'companies/stock-market.svg',
     url: '',
     nda: 'Stock Market',
   },
   {
     name: 'CCBill',
-    imgSrc: 'ccbill.svg',
+    imgSrc: 'companies/ccbill.svg',
     url: 'https://ccbill.com/',
   },
   {
     name: 'PhoenixNAP',
-    imgSrc: 'phoenix-nap.svg',
+    imgSrc: 'companies/phoenix-nap.svg',
     url: 'https://phoenixnap.com/',
   },
   {
     name: 'GraoupM',
-    imgSrc: 'groupm.svg',
+    imgSrc: 'companies/groupm.svg',
     url: 'https://www.groupm.com/',
   },
   {
     name: 'Valcon',
-    imgSrc: 'valcon.png',
+    imgSrc: 'companies/valcon.png',
     url: 'https://valcon.com/',
   },
 ];

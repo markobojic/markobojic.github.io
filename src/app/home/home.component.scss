@@ -1,0 +1,8 @@
+.summary {
+  @media screen and (min-width: 1024px) {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

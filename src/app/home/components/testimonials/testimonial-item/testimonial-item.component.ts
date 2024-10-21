@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Testimonial } from '../testimonial.model';
 
 @Component({
   selector: 'app-testimonial-item',
@@ -8,8 +9,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './testimonial-item.component.scss',
 })
 export class TestimonialItemComponent {
-  @Input() name!: string;
-  @Input() feedback!: string;
-  @Input() position!: string;
-  @Input() imageSrc!: string;
+  @Input() testimonial!: Testimonial;
 }

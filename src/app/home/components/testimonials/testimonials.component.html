@@ -5,13 +5,7 @@
   </h3>
   <app-carousel>
     <div *ngFor="let testimonial of testimonials" #slide>
-      <app-testimonial-item
-        [name]="testimonial.name"
-        [feedback]="testimonial.feedback"
-        [position]="testimonial.position"
-        [imageSrc]="testimonial.imageSrc"
-      >
-      </app-testimonial-item>
+      <app-testimonial-item [testimonial]="testimonial"> </app-testimonial-item>
     </div>
   </app-carousel>
 </div>

@@ -40,24 +40,6 @@ export class CarouselComponent implements AfterContentInit {
     this._updateSlidePosition();
   }
 
-  nextSlide() {
-    if (this.currentSlide < this.totalSlides - 1) {
-      this.currentSlide++;
-    } else {
-      this.currentSlide = 0;
-    }
-    this._updateSlidePosition();
-  }
-
-  prevSlide() {
-    if (this.currentSlide > 0) {
-      this.currentSlide--;
-    } else {
-      this.currentSlide = this.totalSlides - 1;
-    }
-    this._updateSlidePosition();
-  }
-
   goToSlide(index: number) {
     this.currentSlide = index;
     this._updateSlidePosition();
@@ -67,15 +49,6 @@ export class CarouselComponent implements AfterContentInit {
   onResize() {
     this._calculateSlideWidth();
     this._updateSlidePosition();
-  }
-
-  // Smooth transition for dragging
-  private setSlidePosition() {
-    this.renderer.setStyle(
-      this.carouselContainer.nativeElement,
-      'transform',
-      `translateX(${this.currentTranslate}px)`
-    );
   }
 
   // Swipe gesture handling
@@ -96,7 +69,7 @@ export class CarouselComponent implements AfterContentInit {
       : event.clientX;
     const deltaX = currentX - this.startX;
     this.currentTranslate = this.prevTranslate + deltaX;
-    this.setSlidePosition();
+    this._setSlidePosition();
   }
 
   onDragEnd() {
@@ -116,10 +89,10 @@ export class CarouselComponent implements AfterContentInit {
   private _updateSlidePosition() {
     const width = this.carouselContainer.nativeElement.offsetWidth;
     this.currentTranslate = -this.currentSlide * width;
-    this.setSlidePositionWithAnimation();
+    this._setSlidePositionWithAnimation();
   }
 
-  private setSlidePositionWithAnimation() {
+  private _setSlidePositionWithAnimation() {
     this.renderer.setStyle(
       this.carouselContainer.nativeElement,
       'transition',
@@ -142,4 +115,32 @@ export class CarouselComponent implements AfterContentInit {
       );
     });
   }
+
+  // Smooth transition for dragging
+  private _setSlidePosition() {
+    this.renderer.setStyle(
+      this.carouselContainer.nativeElement,
+      'transform',
+      `translateX(${this.currentTranslate}px)`
+    );
+  }
+
+  // arrow controlls which I will maybe use in future
+  // nextSlide() {
+  //   if (this.currentSlide < this.totalSlides - 1) {
+  //     this.currentSlide++;
+  //   } else {
+  //     this.currentSlide = 0;
+  //   }
+  //   this._updateSlidePosition();
+  // }
+
+  // prevSlide() {
+  //   if (this.currentSlide > 0) {
+  //     this.currentSlide--;
+  //   } else {
+  //     this.currentSlide = this.totalSlides - 1;
+  //   }
+  //   this._updateSlidePosition();
+  // }
 }
