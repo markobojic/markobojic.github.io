@@ -124,23 +124,4 @@ export class CarouselComponent implements AfterContentInit {
       `translateX(${this.currentTranslate}px)`
     );
   }
-
-  // arrow controlls which I will maybe use in future
-  // nextSlide() {
-  //   if (this.currentSlide < this.totalSlides - 1) {
-  //     this.currentSlide++;
-  //   } else {
-  //     this.currentSlide = 0;
-  //   }
-  //   this._updateSlidePosition();
-  // }
-
-  // prevSlide() {
-  //   if (this.currentSlide > 0) {
-  //     this.currentSlide--;
-  //   } else {
-  //     this.currentSlide = this.totalSlides - 1;
-  //   }
-  //   this._updateSlidePosition();
-  // }
 }
