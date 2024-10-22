@@ -1,8 +1,10 @@
 .summary {
-  // @media screen and (min-width: 1024px) {
-  height: 100vh;
+  height: calc(100vh - 4.75rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // }
+
+  @media screen and (min-width: 1024px) {
+    height: 100vh;
+  }
 }
