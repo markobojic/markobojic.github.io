@@ -3,12 +3,12 @@ footer {
   align-items: center;
   justify-content: space-between;
 
-  @media screen and (min-width: 1024px) {
-    position: fixed;
-    bottom: 1rem;
-    left: 2rem;
-    right: 2rem;
-  }
+  // @media screen and (min-width: 1024px) {
+  position: fixed;
+  bottom: 1rem;
+  left: 2rem;
+  right: 2rem;
+  // }
 
   .contact {
     text-align: right;

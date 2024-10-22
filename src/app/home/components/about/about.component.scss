@@ -2,22 +2,23 @@
   padding-top: 4rem;
   display: block;
 
-  @media screen and (min-width: 1024px) {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
+  // @media screen and (min-width: 1024px) {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25vh;
 
-    .about {
-      width: 26rem;
-    }
-
-    .arrow {
-      position: relative;
-      display: block;
-    }
+  .about {
+    width: 26rem;
   }
+
+  .arrow {
+    position: relative;
+    //   display: block;
+  }
+  // }
 }
 
 .name {
@@ -28,6 +29,6 @@
   margin-bottom: 1rem;
 }
 
-.arrow {
-  display: none;
-}
+// .arrow {
+//   display: none;
+// }

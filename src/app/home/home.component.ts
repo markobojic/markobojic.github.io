@@ -11,9 +11,9 @@ import { TestimonialsComponent } from './components/testimonials/testimonials.co
   styleUrl: './home.component.scss',
 })
 export class HomeComponent {
-  @ViewChild('companies') companies!: ElementRef;
+  @ViewChild('summary') summary!: ElementRef;
 
   onScroll() {
-    this.companies.nativeElement.scrollIntoView({ behavior: 'smooth' });
+    this.summary.nativeElement.scrollIntoView({ behavior: 'smooth' });
   }
 }
