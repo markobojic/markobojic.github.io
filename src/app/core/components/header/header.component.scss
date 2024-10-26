@@ -3,12 +3,12 @@ header {
   align-items: center;
   justify-content: space-between;
 
-  // @media screen and (min-width: 1024px) {
-  position: fixed;
-  top: 1rem;
-  left: 2rem;
-  right: 2rem;
-  // }
+  @media screen and (min-width: 1200px) {
+    position: fixed;
+    top: 1rem;
+    left: 2rem;
+    right: 2rem;
+  }
 }
 
 .nav-link {
@@ -19,17 +19,8 @@ header {
   text-transform: uppercase;
   text-decoration: none;
   padding-bottom: 2px;
-  position: relative;
-
-  &::after {
-    content: "\200B";
-    position: absolute;
-    right: 0;
-    width: 5px;
-    background-color: var(--dark);
-    padding-bottom: 2px;
-    border-bottom: 1px solid var(--dark);
-  }
+  width: 48px;
+  overflow: hidden;
 
   &.active {
     border-bottom: 1px solid var(--ghost);

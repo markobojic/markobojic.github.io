@@ -1,24 +1,19 @@
 :host {
-  padding-top: 4rem;
   display: block;
-
-  // @media screen and (min-width: 1024px) {
-  height: 100vh;
+  height: calc(100vh - 25px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 25vh;
 
+  @media screen and (min-width: 1200px) {
+    height: 100vh - 6rem - 1px;
+  }
+
   .about {
     width: 26rem;
   }
-
-  .arrow {
-    position: relative;
-    //   display: block;
-  }
-  // }
 }
 
 .name {
@@ -28,7 +23,3 @@
 .role {
   margin-bottom: 1rem;
 }
-
-// .arrow {
-//   display: none;
-// }

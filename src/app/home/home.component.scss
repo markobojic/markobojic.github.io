@@ -1,10 +1,10 @@
 .summary {
-  height: calc(100vh - 4.75rem);
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 3.5rem;
 
-  @media screen and (min-width: 1024px) {
+  @media screen and (min-width: 1200px) {
     height: 100vh;
   }
 }
