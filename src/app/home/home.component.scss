@@ -1,11 +1,14 @@
 .summary {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
+  padding-top: 1rem;
   gap: 3.5rem;
-  min-height: calc(100vh - 67px);
+  min-height: calc(100vh - 57px - 3.5rem);
 
   @media screen and (min-width: 1200px) {
+    justify-content: center;
+    padding-top: 0;
     height: 100vh;
   }
 }
