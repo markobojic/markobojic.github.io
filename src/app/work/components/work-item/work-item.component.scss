@@ -1,0 +1,48 @@
+.job {
+  border-bottom: 1px solid var(--ghost);
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+
+  h2 {
+    margin-top: 1.25rem;
+  }
+
+  &__meta {
+    margin-bottom: 1.25rem;
+    margin-top: 1.25rem;
+    display: flex;
+    align-items: center;
+
+    h5 {
+      line-height: 0;
+    }
+  }
+
+  .arrow {
+    margin-left: auto;
+    width: 1rem;
+    height: 1rem;
+    border-bottom: 2px solid var(--ghost);
+    border-right: 2px solid var(--ghost);
+    transform: rotate(-45deg);
+    opacity: 0;
+  }
+
+  &:hover {
+    .arrow {
+      animation: animate 1s forwards;
+    }
+  }
+}
+
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(-45deg) translate(-40px, -40px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0px, 0px);
+  }
+}

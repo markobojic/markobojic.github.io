@@ -1,1 +1,9 @@
-<p>work works!</p>
+<div class="work">
+  <app-work-summary></app-work-summary>
+
+  <div class="work__list">
+    @for (job of jobs; track $index) {
+    <app-work-item [job]="job"></app-work-item>
+    }
+  </div>
+</div>
