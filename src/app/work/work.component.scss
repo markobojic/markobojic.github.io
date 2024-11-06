@@ -1,9 +1,49 @@
 .work {
-  max-width: 399px;
+  max-width: 1024px;
   margin: 0 auto;
   padding-top: 3rem;
 
   &__list {
     padding-top: 1.75rem;
+
+    // TODO: same props ovde i na work summary (kad napravim wrapper komponentu)
+    max-width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  header,
+  footer {
+    position: fixed;
+    left: 2rem;
+    right: 2rem;
+  }
+
+  header {
+    top: 1rem;
+  }
+
+  footer {
+    bottom: 1rem;
+    margin-top: 0;
+  }
+
+  .work {
+    height: calc(100vh - 2rem);
+    padding-top: 0;
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    align-content: center;
+    gap: 8rem;
+
+    &__list {
+      padding-top: 0;
+      max-height: 50vh;
+      overflow-y: auto;
+      overflow-x: hidden;
+      flex: 1 0 auto;
+    }
   }
 }

@@ -1,4 +1,13 @@
 .work-summary {
+  // TODO: same props ovde i na work (kad napravim wrapper komponentu)
+  max-width: 480px;
+  margin: 0 auto;
+
+  p:first-of-type {
+    position: relative;
+    top: -5px;
+  }
+
   .profile-img {
     width: 6rem;
     height: auto;

@@ -36,6 +36,12 @@
   }
 }
 
+@media (min-width: 1024px) {
+  :host(:first-child) h2 {
+    margin-top: 0;
+  }
+}
+
 @keyframes animate {
   0% {
     opacity: 0;
