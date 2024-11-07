@@ -1,0 +1,10 @@
+<app-work-wrapper>
+  <ng-container summary>
+    <app-work-summary></app-work-summary>
+  </ng-container>
+  <ng-container details>
+    @for (job of jobs; track $index) {
+    <app-work-item [job]="job"></app-work-item>
+    }
+  </ng-container>
+</app-work-wrapper>
