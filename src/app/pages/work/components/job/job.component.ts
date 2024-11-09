@@ -3,13 +3,13 @@ import { Job } from '../../../../shared/models/job.model';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-work-item',
+  selector: 'app-job',
   standalone: true,
   imports: [],
-  templateUrl: './work-item.component.html',
-  styleUrl: './work-item.component.scss',
+  templateUrl: './job.component.html',
+  styleUrl: './job.component.scss',
 })
-export class WorkItemComponent {
+export class JobComponent {
   router = inject(Router);
   @Input() job!: Job;
 

@@ -1,0 +1,14 @@
+<div class="job">
+  <h2>{{ job?.position }}</h2>
+  <div class="job__meta">
+    <h4>{{ job?.company }}</h4>
+    <h5>, {{ job?.dateStart }} - {{ job?.dateEnd }}</h5>
+  </div>
+  <h3>Responsibilities</h3>
+  <p>{{ job?.responsibilities }}</p>
+  <div class="job__skills">
+    @for (skill of job?.skills; track $index) {
+    <app-badge [label]="skill"></app-badge>
+    }
+  </div>
+</div>

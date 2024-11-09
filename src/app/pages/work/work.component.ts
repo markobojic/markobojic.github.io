@@ -3,17 +3,12 @@ import { Component } from '@angular/core';
 import { NgFor } from '@angular/common';
 import { WorkSummaryComponent } from './components/work-summary/work-summary.component';
 import { Job } from '../../shared/models/job.model';
-import { WorkItemComponent } from './components/work-item/work-item.component';
+import { JobComponent } from './components/job/job.component';
 import { WORK_DATA } from '../../shared/data/work.data';
 @Component({
   selector: 'app-work',
   standalone: true,
-  imports: [
-    WorkSummaryComponent,
-    NgFor,
-    WorkItemComponent,
-    WorkWrapperComponent,
-  ],
+  imports: [WorkSummaryComponent, NgFor, JobComponent, WorkWrapperComponent],
   templateUrl: './work.component.html',
   styleUrl: './work.component.scss',
 })
