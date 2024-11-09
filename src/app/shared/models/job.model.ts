@@ -4,4 +4,6 @@ export interface Job {
   company: string;
   dateStart: string;
   dateEnd: string;
+  responsibilities: string;
+  skills: string[];
 }

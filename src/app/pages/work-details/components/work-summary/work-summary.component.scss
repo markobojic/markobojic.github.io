@@ -1,0 +1,23 @@
+.work-item {
+  &__meta {
+    margin-top: 1.25rem;
+    display: flex;
+    align-items: center;
+
+    h5 {
+      line-height: 0;
+    }
+  }
+
+  h3 {
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  &__skills {
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+}

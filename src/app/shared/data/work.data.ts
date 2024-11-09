@@ -9,6 +9,9 @@ export const WORK_DATA: Job[] = [
     company: 'Synechron',
     dateStart: 'Jan 2024',
     dateEnd: 'Present',
+    responsibilities: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
+Pored toga vodis razvoj projekata na koje si dodeljen`,
+    skills: ['Team leadership', 'Engineering Management'],
   },
   {
     id: '2',
@@ -16,6 +19,9 @@ export const WORK_DATA: Job[] = [
     company: 'Synechron',
     dateStart: 'Jun 2023',
     dateEnd: 'Dec 2023',
+    responsibilities: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
+Pored toga vodis razvoj projekata na koje si dodeljen`,
+    skills: ['Team leadership', 'Engineering Management'],
   },
   {
     id: '3',
@@ -23,6 +29,9 @@ export const WORK_DATA: Job[] = [
     company: 'Programarko',
     dateStart: 'Nov 2021',
     dateEnd: 'Feb 2024',
+    responsibilities: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
+Pored toga vodis razvoj projekata na koje si dodeljen`,
+    skills: ['Team leadership', 'Engineering Management'],
   },
   {
     id: '4',
@@ -30,6 +39,9 @@ export const WORK_DATA: Job[] = [
     company: 'Valcon',
     dateStart: 'Sep 2022',
     dateEnd: 'Jun 2023',
+    responsibilities: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
+Pored toga vodis razvoj projekata na koje si dodeljen`,
+    skills: ['Team leadership', 'Engineering Management'],
   },
   {
     id: '5',
@@ -37,6 +49,9 @@ export const WORK_DATA: Job[] = [
     company: 'Rockdata',
     dateStart: 'Mar 2020',
     dateEnd: 'Jun 2022',
+    responsibilities: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
+Pored toga vodis razvoj projekata na koje si dodeljen`,
+    skills: ['Team leadership', 'Engineering Management'],
   },
   {
     id: '6',
@@ -44,6 +59,9 @@ export const WORK_DATA: Job[] = [
     company: 'CCBill / PhoenixNAP',
     dateStart: 'Sep 2018',
     dateEnd: 'Feb 2020',
+    responsibilities: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
+Pored toga vodis razvoj projekata na koje si dodeljen`,
+    skills: ['Team leadership', 'Engineering Management'],
   },
   {
     id: '7',
@@ -51,6 +69,9 @@ export const WORK_DATA: Job[] = [
     company: 'Monochrome',
     dateStart: 'Aug 2017',
     dateEnd: 'Aug 2018',
+    responsibilities: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
+Pored toga vodis razvoj projekata na koje si dodeljen`,
+    skills: ['Team leadership', 'Engineering Management'],
   },
   {
     id: '8',
@@ -58,6 +79,9 @@ export const WORK_DATA: Job[] = [
     company: 'Novalite',
     dateStart: 'Jan 2016',
     dateEnd: 'Aug 2017',
+    responsibilities: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
+Pored toga vodis razvoj projekata na koje si dodeljen`,
+    skills: ['Team leadership', 'Engineering Management'],
   },
   {
     id: '9',
@@ -65,5 +89,8 @@ export const WORK_DATA: Job[] = [
     company: 'Eipix',
     dateStart: 'May 2014',
     dateEnd: 'May 2015',
+    responsibilities: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
+Pored toga vodis razvoj projekata na koje si dodeljen`,
+    skills: ['Team leadership', 'Engineering Management'],
   },
 ];
