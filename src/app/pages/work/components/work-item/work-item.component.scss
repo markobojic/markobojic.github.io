@@ -25,13 +25,13 @@
     height: 1rem;
     border-bottom: 2px solid var(--ghost);
     border-right: 2px solid var(--ghost);
-    transform: rotate(-45deg);
-    opacity: 0;
+    transform: rotate(-45deg) translate(-15px, -15px);
+    transition: transform 0.3s ease-out;
   }
 
   &:hover {
     .arrow {
-      animation: animate 1s forwards;
+      transform: rotate(-45deg) translate(-5px, -5px);
     }
   }
 }
@@ -39,16 +39,5 @@
 @media (min-width: 1024px) {
   :host(:first-child) h2 {
     margin-top: 0;
-  }
-}
-
-@keyframes animate {
-  0% {
-    opacity: 0;
-    transform: rotate(-45deg) translate(-40px, -40px);
-  }
-  100% {
-    opacity: 1;
-    transform: rotate(-45deg) translate(0px, 0px);
   }
 }
