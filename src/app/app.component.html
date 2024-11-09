@@ -1,5 +1,5 @@
-<div class="wrapper">
+<div class="wrapper" [@routeAnimations]="prepareRoute(outlet)">
   <app-header></app-header>
-  <router-outlet></router-outlet>
+  <router-outlet #outlet="outlet"></router-outlet>
   <app-footer></app-footer>
 </div>

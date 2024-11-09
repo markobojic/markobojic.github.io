@@ -11,9 +11,11 @@ export const routes: Routes = [
   {
     path: 'work',
     component: WorkComponent,
+    data: { animation: 'Page1' },
   },
   {
     path: 'work/:id',
     component: WorkDetailsComponent,
+    data: { animation: 'Page2' },
   },
 ];
