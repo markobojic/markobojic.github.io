@@ -12,6 +12,19 @@ export const WORK_DATA: Job[] = [
     responsibilities: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
 Pored toga vodis razvoj projekata na koje si dodeljen`,
     skills: ['Team leadership', 'Engineering Management'],
+    projects: [
+      {
+        title: 'Project 1',
+        description: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
+Pored toga vodis razvoj projekata na koje si dodeljen`,
+        technologies: ['angular', 'typescript'],
+      },
+      {
+        title: 'Project 2',
+        description: `I lead a team of over 10 engineers and QA specialists in migrating a complex stock market solution to Angular codebase with a REST API. My role involves managing the project, providing technical direction, and supporting team development. I worked with delivery directors on reporting and coordinate with client project managers on planning and delivery, addressing both technical and domain-specific challenges.`,
+        technologies: ['angular', 'typescript'],
+      },
+    ],
   },
   {
     id: '2',
@@ -22,6 +35,19 @@ Pored toga vodis razvoj projekata na koje si dodeljen`,
     responsibilities: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
 Pored toga vodis razvoj projekata na koje si dodeljen`,
     skills: ['Team leadership', 'Engineering Management'],
+    projects: [
+      {
+        title: 'Project 1',
+        description: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
+Pored toga vodis razvoj projekata na koje si dodeljen`,
+        technologies: ['angular', 'typescript'],
+      },
+      {
+        title: 'Project 2',
+        description: `I lead a team of over 10 engineers and QA specialists in migrating a complex stock market solution to Angular codebase with a REST API. My role involves managing the project, providing technical direction, and supporting team development. I worked with delivery directors on reporting and coordinate with client project managers on planning and delivery, addressing both technical and domain-specific challenges.`,
+        technologies: ['angular', 'typescript'],
+      },
+    ],
   },
   {
     id: '3',
@@ -32,6 +58,19 @@ Pored toga vodis razvoj projekata na koje si dodeljen`,
     responsibilities: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
 Pored toga vodis razvoj projekata na koje si dodeljen`,
     skills: ['Team leadership', 'Engineering Management'],
+    projects: [
+      {
+        title: 'Project 1',
+        description: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
+Pored toga vodis razvoj projekata na koje si dodeljen`,
+        technologies: ['angular', 'typescript'],
+      },
+      {
+        title: 'Project 2',
+        description: `I lead a team of over 10 engineers and QA specialists in migrating a complex stock market solution to Angular codebase with a REST API. My role involves managing the project, providing technical direction, and supporting team development. I worked with delivery directors on reporting and coordinate with client project managers on planning and delivery, addressing both technical and domain-specific challenges.`,
+        technologies: ['angular', 'typescript'],
+      },
+    ],
   },
   {
     id: '4',
@@ -42,6 +81,19 @@ Pored toga vodis razvoj projekata na koje si dodeljen`,
     responsibilities: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
 Pored toga vodis razvoj projekata na koje si dodeljen`,
     skills: ['Team leadership', 'Engineering Management'],
+    projects: [
+      {
+        title: 'Project 1',
+        description: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
+Pored toga vodis razvoj projekata na koje si dodeljen`,
+        technologies: ['angular', 'typescript'],
+      },
+      {
+        title: 'Project 2',
+        description: `I lead a team of over 10 engineers and QA specialists in migrating a complex stock market solution to Angular codebase with a REST API. My role involves managing the project, providing technical direction, and supporting team development. I worked with delivery directors on reporting and coordinate with client project managers on planning and delivery, addressing both technical and domain-specific challenges.`,
+        technologies: ['angular', 'typescript'],
+      },
+    ],
   },
   {
     id: '5',
@@ -52,6 +104,19 @@ Pored toga vodis razvoj projekata na koje si dodeljen`,
     responsibilities: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
 Pored toga vodis razvoj projekata na koje si dodeljen`,
     skills: ['Team leadership', 'Engineering Management'],
+    projects: [
+      {
+        title: 'Project 1',
+        description: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
+Pored toga vodis razvoj projekata na koje si dodeljen`,
+        technologies: ['angular', 'typescript'],
+      },
+      {
+        title: 'Project 2',
+        description: `I lead a team of over 10 engineers and QA specialists in migrating a complex stock market solution to Angular codebase with a REST API. My role involves managing the project, providing technical direction, and supporting team development. I worked with delivery directors on reporting and coordinate with client project managers on planning and delivery, addressing both technical and domain-specific challenges.`,
+        technologies: ['angular', 'typescript'],
+      },
+    ],
   },
   {
     id: '6',
@@ -62,6 +127,19 @@ Pored toga vodis razvoj projekata na koje si dodeljen`,
     responsibilities: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
 Pored toga vodis razvoj projekata na koje si dodeljen`,
     skills: ['Team leadership', 'Engineering Management'],
+    projects: [
+      {
+        title: 'Project 1',
+        description: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
+Pored toga vodis razvoj projekata na koje si dodeljen`,
+        technologies: ['angular', 'typescript'],
+      },
+      {
+        title: 'Project 2',
+        description: `I lead a team of over 10 engineers and QA specialists in migrating a complex stock market solution to Angular codebase with a REST API. My role involves managing the project, providing technical direction, and supporting team development. I worked with delivery directors on reporting and coordinate with client project managers on planning and delivery, addressing both technical and domain-specific challenges.`,
+        technologies: ['angular', 'typescript'],
+      },
+    ],
   },
   {
     id: '7',
@@ -72,6 +150,19 @@ Pored toga vodis razvoj projekata na koje si dodeljen`,
     responsibilities: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
 Pored toga vodis razvoj projekata na koje si dodeljen`,
     skills: ['Team leadership', 'Engineering Management'],
+    projects: [
+      {
+        title: 'Project 1',
+        description: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
+Pored toga vodis razvoj projekata na koje si dodeljen`,
+        technologies: ['angular', 'typescript'],
+      },
+      {
+        title: 'Project 2',
+        description: `I lead a team of over 10 engineers and QA specialists in migrating a complex stock market solution to Angular codebase with a REST API. My role involves managing the project, providing technical direction, and supporting team development. I worked with delivery directors on reporting and coordinate with client project managers on planning and delivery, addressing both technical and domain-specific challenges.`,
+        technologies: ['angular', 'typescript'],
+      },
+    ],
   },
   {
     id: '8',
@@ -82,6 +173,19 @@ Pored toga vodis razvoj projekata na koje si dodeljen`,
     responsibilities: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
 Pored toga vodis razvoj projekata na koje si dodeljen`,
     skills: ['Team leadership', 'Engineering Management'],
+    projects: [
+      {
+        title: 'Project 1',
+        description: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
+Pored toga vodis razvoj projekata na koje si dodeljen`,
+        technologies: ['angular', 'typescript'],
+      },
+      {
+        title: 'Project 2',
+        description: `I lead a team of over 10 engineers and QA specialists in migrating a complex stock market solution to Angular codebase with a REST API. My role involves managing the project, providing technical direction, and supporting team development. I worked with delivery directors on reporting and coordinate with client project managers on planning and delivery, addressing both technical and domain-specific challenges.`,
+        technologies: ['angular', 'typescript'],
+      },
+    ],
   },
   {
     id: '9',
@@ -92,5 +196,18 @@ Pored toga vodis razvoj projekata na koje si dodeljen`,
     responsibilities: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
 Pored toga vodis razvoj projekata na koje si dodeljen`,
     skills: ['Team leadership', 'Engineering Management'],
+    projects: [
+      {
+        title: 'Project 1',
+        description: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
+Pored toga vodis razvoj projekata na koje si dodeljen`,
+        technologies: ['angular', 'typescript'],
+      },
+      {
+        title: 'Project 2',
+        description: `I lead a team of over 10 engineers and QA specialists in migrating a complex stock market solution to Angular codebase with a REST API. My role involves managing the project, providing technical direction, and supporting team development. I worked with delivery directors on reporting and coordinate with client project managers on planning and delivery, addressing both technical and domain-specific challenges.`,
+        technologies: ['angular', 'typescript'],
+      },
+    ],
   },
 ];

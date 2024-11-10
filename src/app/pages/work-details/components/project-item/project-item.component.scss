@@ -1,0 +1,19 @@
+:host {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.description {
+  margin: 1rem 0;
+}
+
+.tech-stack {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tech {
+  width: 2rem;
+  height: 100%;
+}

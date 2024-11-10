@@ -1,3 +1,5 @@
+import { Project } from './project.model';
+
 export interface Job {
   id: string;
   position: string;
@@ -6,4 +8,5 @@ export interface Job {
   dateEnd: string;
   responsibilities: string;
   skills: string[];
+  projects: Project[];
 }

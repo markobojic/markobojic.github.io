@@ -3,6 +3,8 @@
     <app-job-summary [job]="job"></app-job-summary>
   </ng-container>
   <ng-container details>
-    <h3>{{ job?.company }}</h3>
+    @for (project of job?.projects; track $index) {
+    <app-project-item [project]="project"></app-project-item>
+    }
   </ng-container>
 </app-work-wrapper>

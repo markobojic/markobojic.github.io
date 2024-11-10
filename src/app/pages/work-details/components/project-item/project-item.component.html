@@ -1,1 +1,11 @@
-<p>project-item works!</p>
+<h3>{{ project.title }}</h3>
+<p class="description">{{ project.description }}</p>
+<div class="tech-stack">
+  @for (tech of project.technologies; track $index) {
+  <img
+    class="tech"
+    [src]="'assets/technologies/' + tech + '.png'"
+    [alt]="tech"
+  />
+  }
+</div>
