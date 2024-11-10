@@ -1,11 +1,16 @@
 .work-wrapper {
+  min-height: calc(100vh - 125px);
+}
+
+.work-content {
   max-width: 1024px;
+  width: 100%;
   margin: 0 auto;
   padding-top: 3rem;
 
   .details,
   .summary {
-    max-width: 480px;
+    max-width: 456px;
     margin: 0 auto;
   }
 
@@ -32,20 +37,30 @@
   }
 
   .work-wrapper {
-    height: calc(100vh - 2rem);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .work-content {
+    height: 50vh;
     padding-top: 0;
     display: flex;
     align-items: flex-start;
-    flex-wrap: wrap;
-    align-content: center;
-    gap: 8rem;
+    justify-content: space-between;
+    gap: 4rem;
+
+    .details,
+    .summary {
+      flex: 1 0 auto;
+    }
 
     .details {
       padding-top: 0;
       max-height: 50vh;
       overflow-y: auto;
       overflow-x: hidden;
-      flex: 1 0 auto;
     }
   }
 }
