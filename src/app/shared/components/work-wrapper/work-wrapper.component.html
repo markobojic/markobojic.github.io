@@ -1,5 +1,8 @@
 <div class="work-wrapper">
-  <div class="work-content">
+  <div
+    class="work-content"
+    [class.transition-width-lock]="isTransitioning$ | async"
+  >
     <div class="summary">
       <ng-content select="[summary]"></ng-content>
     </div>

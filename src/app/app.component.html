@@ -1,4 +1,9 @@
-<div class="wrapper" [@routeAnimations]="prepareRoute(outlet)">
+<div
+  class="wrapper"
+  [@routeAnimations]="prepareRoute(outlet)"
+  (@routeAnimations.start)="onAnimationStart()"
+  (@routeAnimations.done)="onAnimationDone()"
+>
   <app-header></app-header>
   <main>
     <router-outlet #outlet="outlet"></router-outlet>

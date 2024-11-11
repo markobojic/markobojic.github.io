@@ -13,6 +13,13 @@
   .details {
     padding-top: 1.75rem;
   }
+
+  &.transition-width-lock {
+    .details,
+    .summary {
+      width: calc(100vw - 4rem);
+    }
+  }
 }
 
 @media screen and (min-width: 1024px) {
