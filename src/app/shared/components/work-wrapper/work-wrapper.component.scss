@@ -40,7 +40,7 @@
   }
 
   .work-wrapper {
-    height: 100vh;
+    height: calc(100vh - 2rem);
     display: flex;
     justify-content: center;
     align-items: center;
