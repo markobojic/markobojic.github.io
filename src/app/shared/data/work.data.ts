@@ -16,13 +16,25 @@ export const WORK_DATA: Job[] = [
         title:
           'Project 1: Front-End Solution for a Leading Global Stock Exchange',
         description: `I lead the creation of a reusable UI library using Storybook, building modular microfrontends for multiple applications, integrated with GraphQL. My role includes sprint-based development and ensuring deliverables meet client expectations while addressing potential risks.`,
-        technologies: ['angular', 'typescript', 'tailwind', 'graphql'],
+        technologies: [
+          'angular',
+          'nx-monorepo',
+          'graphql',
+          'apollo',
+          'storybook',
+        ],
       },
       {
         title:
           'Project 2: Migration of a Complex Index Management Solution to Angular',
         description: `I led a team to migrate a Silverlight-based solution to an Angular framework with REST APIs, tackling challenges like missing requirements and legacy code analysis. My role involved defining functionality from poorly written code, providing technical guidance, and aligning with clients on delivery goals.`,
-        technologies: ['angular', 'typescript'],
+        technologies: [
+          'angular',
+          'typescript',
+          'javascript',
+          'html',
+          'tailwind',
+        ],
       },
     ],
   },

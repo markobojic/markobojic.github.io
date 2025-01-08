@@ -1,10 +1,22 @@
 <app-work-wrapper>
   <ng-container summary>
     <app-work-summary></app-work-summary>
+    <a
+      href="https://drive.google.com/file/d/1pHr-OmzMRkfKBTpn4IUfEEuAakhNJtoH/view?usp=drive_link"
+      target="_blank"
+      class="btn large-screen"
+      >Full Resume</a
+    >
   </ng-container>
   <ng-container details>
     @for (job of jobs; track $index) {
     <app-job [job]="job"></app-job>
     }
+    <a
+      href="https://drive.google.com/file/d/1pHr-OmzMRkfKBTpn4IUfEEuAakhNJtoH/view?usp=drive_link"
+      target="_blank"
+      class="btn small-screen"
+      >Full Resume</a
+    >
   </ng-container>
 </app-work-wrapper>
