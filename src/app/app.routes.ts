@@ -20,4 +20,8 @@ export const routes: Routes = [
       ),
     data: { animation: 'Page2' },
   },
+  {
+    path: '**',
+    redirectTo: '',
+  },
 ];
