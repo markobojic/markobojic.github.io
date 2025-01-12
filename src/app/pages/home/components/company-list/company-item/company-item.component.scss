@@ -1,5 +1,5 @@
 :host {
-  background-color: var(--ghost);
+  background-color: var(--secondary-color);
   width: 11rem;
   height: 4.5rem;
 
@@ -29,19 +29,28 @@
       text-decoration: none;
     }
   }
+
+  body.light-theme & {
+    background-color: transparent;
+    border: 1px solid var(--secondary-color);
+  }
 }
 
 .tooltip-label {
   font-size: 0.75rem;
   margin-top: 3px;
   line-height: 0;
-  color: var(--dark);
+  color: var(--primary-color);
   text-align: center;
 }
 
+body.light-theme :host .tooltip-label {
+  color: var(--secondary-color);
+}
+
 .tooltip {
-  background: var(--dark);
-  color: var(--ghost);
+  background: var(--primary-color);
+  color: var(--secondary-color);
   font-size: 0.75rem;
   line-height: 1rem;
   padding: 0.25rem;
@@ -51,4 +60,9 @@
   left: 1rem;
   right: 1rem;
   transform: translateY(-50%);
+}
+
+body.light-theme :host .tooltip {
+  background: var(--secondary-color);
+  color: var(--primary-color);
 }

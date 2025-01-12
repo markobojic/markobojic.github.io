@@ -1,10 +1,10 @@
 body {
-  background-color: var(--dark);
-  color: var(--ghost);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 a {
-  color: var(--ghost);
+  color: var(--secondary-color);
   text-decoration: underline;
 
   &:not(.active):hover {

@@ -1,5 +1,5 @@
 .job {
-  border-bottom: 1px solid var(--ghost);
+  border-bottom: 1px solid var(--secondary-color);
   display: flex;
   align-items: center;
   cursor: pointer;
@@ -23,8 +23,8 @@
     margin-left: auto;
     width: 1rem;
     height: 1rem;
-    border-bottom: 2px solid var(--ghost);
-    border-right: 2px solid var(--ghost);
+    border-bottom: 2px solid var(--secondary-color);
+    border-right: 2px solid var(--secondary-color);
     transform: rotate(-45deg) translate(-15px, -15px);
     transition: transform 0.3s ease-out;
   }

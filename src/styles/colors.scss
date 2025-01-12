@@ -1,4 +1,9 @@
 :root {
-  --dark: #1a1818;
-  --ghost: #ece7e1;
+  --primary-color: #1a1818;
+  --secondary-color: #ece7e1;
+}
+
+body.light-theme {
+  --primary-color: #ece7e1;
+  --secondary-color: #1a1818;
 }

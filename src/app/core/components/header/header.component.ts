@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { ThemeService } from '../../services/theme-service/theme.service';
 
 @Component({
   selector: 'app-header',
@@ -8,4 +9,10 @@ import { RouterModule } from '@angular/router';
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
-export class HeaderComponent {}
+export class HeaderComponent {
+  themeService = inject(ThemeService);
+
+  onToggleTheme() {
+    this.themeService.toggleTheme();
+  }
+}
