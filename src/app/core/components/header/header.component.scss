@@ -27,45 +27,7 @@ header {
   }
 }
 
-.toggle-theme-btn {
-  position: relative;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  border: 1px solid var(--secondary-color);
-  background: linear-gradient(
-    180deg,
-    var(--primary-color) 50%,
-    var(--secondary-color) 50%
-  );
-  cursor: pointer;
-  outline: none;
-
-  &::before,
-  &::after {
-    content: "";
-    position: absolute;
-    border-radius: 50%;
-  }
-
-  &::before {
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40%;
-    height: 40%;
-    background-color: var(--primary-color);
-  }
-
-  &::after {
-    bottom: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 40%;
-    height: 40%;
-    background-color: var(--secondary-color);
-  }
-
+.theme-btn {
   @media screen and (min-width: 1200px) {
     position: fixed;
     top: 50%;
