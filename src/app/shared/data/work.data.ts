@@ -144,7 +144,7 @@ Programarko remains one of my most meaningful projects, reflecting my passion fo
   },
   {
     id: '4',
-    position: 'Front-end Team Lead',
+    position: 'Front-End Team Lead',
     company: 'Valcon',
     dateStart: 'Sep 2022',
     dateEnd: 'Jun 2023',
@@ -181,7 +181,7 @@ Unfortunately, the company underwent significant layoffs due to a sudden market 
   },
   {
     id: '5',
-    position: 'Front-end Lead / Partner',
+    position: 'Front-End Lead / Partner',
     company: 'Rockdata',
     dateStart: 'Mar 2020',
     dateEnd: 'May 2022',
@@ -244,24 +244,35 @@ Unfortunately, the company underwent significant layoffs due to a sudden market 
   },
   {
     id: '6',
-    position: 'Front-end Developer',
+    position: 'Front-End Engineer',
     company: 'CCBill / PhoenixNAP',
     dateStart: 'Sep 2018',
     dateEnd: 'Feb 2020',
-    responsibilities: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
-Pored toga vodis razvoj projekata na koje si dodeljen`,
-    skills: ['Team leadership', 'Engineering Management'],
+    responsibilities: `I contributed to developing and maintaining the company's Bare Metal billing application, collaborating with a team of approximately 80 professionals to deliver a billing system that facilitated seamless server rentals for thousands of users.`,
+    skills: ['Angular', 'JavaScript', 'Unit Testing', 'Scrum'],
     projects: [
       {
-        title: 'Project 1',
-        description: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
-Pored toga vodis razvoj projekata na koje si dodeljen`,
-        technologies: ['angular', 'typescript'],
-      },
-      {
-        title: 'Project 2',
-        description: `I lead a team of over 10 engineers and QA specialists in migrating a complex stock market solution to Angular codebase with a REST API. My role involves managing the project, providing technical direction, and supporting team development. I worked with delivery directors on reporting and coordinate with client project managers on planning and delivery, addressing both technical and domain-specific challenges.`,
-        technologies: ['angular', 'typescript'],
+        title: 'Project - Admin Billing',
+        description: `I joined a team of four JS developers tasked with creating the front-end of the Bare Metal Cloud billing application using Angular. Surrounded by senior developers and architects, I had the opportunity to learn and adhere to industry best practices. Each front-end team member was assigned to a functional team, collaborating on different parts of the final solution. This project provided valuable technical and organizational experience, including frequent participation in demos for executive leadership.
+
+Our team focused on developing a user-friendly interface that allowed clients to manage their server rentals efficiently. The project involved integrating various APIs and services to support functionalities like server deployment, configuration, and scaling. Additionally, we ensured that the application adhered to best practices in coding standards and performance optimization. It was my first experience writing unit tests, and I quickly recognized their value in maintaining the application and updating dependencies like Angular versions. From that point onward, I advocated for implementing unit tests on all projects I worked on, understanding their critical role in early bug detection, code quality improvement, and facilitating updates.
+
+This experience enhanced my technical skills and provided insights into agile development processes and effective team collaboration, laying a strong foundation for future projects.
+`,
+        technologies: [
+          'angular',
+          'typescript',
+          'javascript',
+          'ngrx',
+          'rxjs',
+          'html',
+          'css',
+          'jasmine',
+          'karma',
+          'bootstrap',
+          'jira',
+          'bitbucket',
+        ],
       },
     ],
   },
