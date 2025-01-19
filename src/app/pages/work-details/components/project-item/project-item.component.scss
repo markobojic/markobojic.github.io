@@ -5,6 +5,7 @@
 
 .description {
   margin: 1rem 0;
+  white-space: pre-line;
 }
 
 .tech-stack {
@@ -12,6 +13,7 @@
   align-items: center;
   flex-wrap: wrap;
   gap: 1rem;
+  margin-top: 1.5rem;
 }
 
 .tech {

@@ -1,5 +1,5 @@
 .btn {
-  display: none;
+  display: block;
   text-decoration: none;
   max-width: 150px;
   background: var(--secondary-color);
@@ -12,8 +12,11 @@
   font-weight: 700;
   letter-spacing: 1px;
 
+  &.large-screen {
+    display: none;
+  }
+
   &.small-screen {
-    display: block;
     margin-top: 2rem;
     margin-left: auto;
     margin-right: auto;
@@ -23,5 +26,9 @@
 @media screen and (min-width: 1024px) {
   .btn.large-screen {
     display: block;
+  }
+
+  .btn.small-screen {
+    display: none;
   }
 }

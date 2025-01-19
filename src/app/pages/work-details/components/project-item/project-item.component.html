@@ -1,5 +1,7 @@
 <h3>{{ project.title }}</h3>
-<p class="description">{{ project.description }}</p>
+
+<p class="description" [innerText]="project.description"></p>
+
 <div class="tech-stack">
   @for (tech of project.technologies; track $index) {
   <img
