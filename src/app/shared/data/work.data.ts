@@ -278,93 +278,156 @@ This experience enhanced my technical skills and provided insights into agile de
   },
   {
     id: '7',
-    position: 'Front-end Developer',
+    position: 'Front-End Engineer',
     company: 'Monochrome',
     dateStart: 'Aug 2017',
     dateEnd: 'Aug 2018',
-    responsibilities: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
-Pored toga vodis razvoj projekata na koje si dodeljen`,
-    skills: ['Team leadership', 'Engineering Management'],
+    responsibilities: `Developed an online hotel booking application by building both admin and client-side versions using Angular, successfully integrating multiple hotels, and creating management service portals for major corporations and banks on the ServiceNow platform, gaining a solid understanding of its capabilities.`,
+    skills: ['Angular', 'ServiceNow'],
     projects: [
       {
-        title: 'Project 1',
-        description: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
-Pored toga vodis razvoj projekata na koje si dodeljen`,
-        technologies: ['angular', 'typescript'],
+        title: 'Project - Booking App',
+        description: `I joined the company and immediately took on my first project: developing a booking application using Angular. I was responsible for the admin and client-facing applications, while another developer handled the backend in Ruby. Despite my initial experience with Angular, I successfully implemented the project, focusing on structure and adhering to Angular best practices, including integrating NgRx Store for state management. I successfully integrated the application into several hotels and took pride in the code quality and architecture achieved during this project.`,
+        technologies: [
+          'angular',
+          'typescript',
+          'javascript',
+          'ngrx',
+          'rxjs',
+          'html',
+          'css',
+          'bootstrap',
+          'jira',
+          'bitbucket',
+        ],
       },
       {
-        title: 'Project 2',
-        description: `I lead a team of over 10 engineers and QA specialists in migrating a complex stock market solution to Angular codebase with a REST API. My role involves managing the project, providing technical direction, and supporting team development. I worked with delivery directors on reporting and coordinate with client project managers on planning and delivery, addressing both technical and domain-specific challenges.`,
-        technologies: ['angular', 'typescript'],
+        title: 'Project - ServiceNow',
+        description: `I had the opportunity to work on developing ServiceNow portals, which was one of the company's main focuses. I contributed to creating several portals for clients, including renowned Swiss and French banks. This experience made me familiar with the ServiceNow platform and helped me understand its development and usage. I learned how to leverage ServiceNow's capabilities to build customized solutions that meet specific client needs, enhancing operational efficiency.`,
+        technologies: ['angular', 'typescript', 'javascript', 'html', 'css'],
+      },
+      {
+        title: 'Project - Company Website',
+        description: `I contributed to the development and maintenance of Monochrome Ltd's company website, ensuring it effectively showcased our expertise in ServiceNow solutions and custom application development. That involved collaborating with designers to create a visually appealing and informative site highlighting our services and past projects, reinforcing our position as experts in digital transformation.`,
+        technologies: [
+          'vuejs',
+          'javascript',
+          'html',
+          'css',
+          'bootstrap',
+          'git',
+        ],
       },
     ],
   },
   {
     id: '8',
-    position: 'UI Developer',
+    position: 'UI Developer / Designer',
     company: 'Novalite',
     dateStart: 'Jan 2016',
     dateEnd: 'Aug 2017',
-    responsibilities: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
-Pored toga vodis razvoj projekata na koje si dodeljen`,
-    skills: ['Team leadership', 'Engineering Management'],
+    responsibilities: `As a Front-End Developer and UI Designer at NovaLite, I developed client-side applications, conducted technical analyses, estimated tasks, resolved bugs, and actively hired and mentored interns.`,
+    skills: ['UI Development', 'Web Design'],
     projects: [
       {
-        title: 'Project 1',
-        description: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
-Pored toga vodis razvoj projekata na koje si dodeljen`,
-        technologies: ['angular', 'typescript'],
+        title: 'Project - Veterinary App',
+        description: `I collaborated with 18 backend engineers to develop and maintain a comprehensive veterinary management application. My contributions included optimizing images and creating an icon library, significantly improving load times, and enhancing the user experience. This project provided valuable insights into the complexities of veterinary practice management software, including features such as electronic medical records, appointment scheduling, invoicing, and inventory management.`,
+        technologies: [
+          'html',
+          'css',
+          'less',
+          'bootstrap',
+          'javascript',
+          'jquery',
+          'photoshop',
+          'illustrator',
+          'tfs',
+        ],
       },
       {
-        title: 'Project 2',
-        description: `I lead a team of over 10 engineers and QA specialists in migrating a complex stock market solution to Angular codebase with a REST API. My role involves managing the project, providing technical direction, and supporting team development. I worked with delivery directors on reporting and coordinate with client project managers on planning and delivery, addressing both technical and domain-specific challenges.`,
-        technologies: ['angular', 'typescript'],
+        title: 'Project - Label Production Process Monitoring',
+        description: `I developed a proof-of-concept for a label production application to secure new business. That involved creating customizable templates and incorporating real-time monitoring features, demonstrating our ability to meet the client’s needs. The success of this proof-of-concept led to a long-term partnership with the client, showcasing our ability to deliver tailored solutions.`,
+        technologies: [
+          'html',
+          'css',
+          'sass',
+          'bootstrap',
+          'javascript',
+          'angularjs',
+          'svn',
+        ],
+      },
+      {
+        title: 'Other Projects',
+        description: `At NovaLite, I was known for transforming complex web designs into pixel-perfect, production-ready front-end implementations. My attention to detail and commitment to quality ensured that my work required no additional review, earning clients' and colleagues' trust and confidence. Additionally, I actively mentored interns, providing hands-on training and technical guidance to support their professional development. One of my mentees quickly secured a paid position, reflecting the effectiveness of the mentorship.`,
       },
     ],
   },
   {
     id: '9',
-    position: 'Front-End Developer / Co-founder',
+    position: 'Co-founder',
     company: 'Awerest',
     dateStart: 'Feb 2014',
     dateEnd: 'Dec 2015',
-    responsibilities: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
-Pored toga vodis razvoj projekata na koje si dodeljen`,
-    skills: ['Team leadership', 'Engineering Management'],
+    responsibilities: `As a co-founder at Awerest, I took great pride in designing and developing “Framer,” a multipurpose Bootstrap HTML5 template published on the Envato Market. Additionally, we created several custom websites tailored to client needs.`,
+    skills: ['Theme Development', 'Website Development', 'Web Design'],
     projects: [
       {
-        title: 'Project 1',
-        description: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
-Pored toga vodis razvoj projekata na koje si dodeljen`,
-        technologies: ['angular', 'typescript'],
+        title: 'Project - Framer a Multipurpose Theme',
+        description: `Recognizing the need for versatile web development tools, my colleague and I created “Framer,” a multipurpose Bootstrap HTML5 template. This framework featured over 200 customizable components, enabling developers to build responsive and unique websites rapidly.
+
+ At that time, CSS preprocessors like SCSS were not widely adopted, so we meticulously crafted the CSS to ensure maintainability and scalability. We effectively managed the cascading nature of CSS, demonstrating our expertise in creating a robust and flexible solution.
+
+The theme was successfully published on the Envato Market, providing a comprehensive tool for the web development community.
+`,
+        technologies: [
+          'html',
+          'css',
+          'sass',
+          'bootstrap',
+          'jquery',
+          'photoshop',
+          'illustrator',
+        ],
       },
       {
-        title: 'Project 2',
-        description: `I lead a team of over 10 engineers and QA specialists in migrating a complex stock market solution to Angular codebase with a REST API. My role involves managing the project, providing technical direction, and supporting team development. I worked with delivery directors on reporting and coordinate with client project managers on planning and delivery, addressing both technical and domain-specific challenges.`,
-        technologies: ['angular', 'typescript'],
+        title: 'Websites Design & Development',
+        description: `At Awerest, we collaborated closely with clients to understand their unique needs and translated those requirements into functional and visually appealing websites. For instance, we developed a website for a psychotherapist, focusing on creating a calming and professional online presence to attract and engage clients. Additionally, we built a website for a construction company, emphasizing robust design elements and showcasing their portfolio to potential customers. These projects involved not only front-end development but also UI design, ensuring that each website was user-friendly and met the client's specific goals.`,
+        technologies: [
+          'wordpress',
+          'html',
+          'css',
+          'sass',
+          'bootstrap',
+          'jquery',
+          'photoshop',
+          'illustrator',
+        ],
       },
     ],
   },
   {
     id: '10',
-    position: 'Level Designer',
+    position: 'Mobile Level Designer',
     company: 'Eipix',
     dateStart: 'May 2014',
     dateEnd: 'May 2015',
-    responsibilities: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
-Pored toga vodis razvoj projekata na koje si dodeljen`,
-    skills: ['Team leadership', 'Engineering Management'],
+    responsibilities: `As a Mobile Level Designer at Eipix Entertainment, I was part of a team responsible for adapting PC games for mobile and tablet devices, ensuring intuitive user interfaces and seamless gameplay experiences.`,
+    skills: ['Game Development', 'Mobile Design', 'UX'],
     projects: [
       {
-        title: 'Project 1',
-        description: `Ovo je opis u kom treba da napises da si reporting menadzer 8 developera. Da kreiras godisnje ciljeve i radis aprejzale sa njima, pratis njihov razvoj, vodis racuna o godisnjim odmorima itd.
-Pored toga vodis razvoj projekata na koje si dodeljen`,
-        technologies: ['angular', 'typescript'],
-      },
-      {
-        title: 'Project 2',
-        description: `I lead a team of over 10 engineers and QA specialists in migrating a complex stock market solution to Angular codebase with a REST API. My role involves managing the project, providing technical direction, and supporting team development. I worked with delivery directors on reporting and coordinate with client project managers on planning and delivery, addressing both technical and domain-specific challenges.`,
-        technologies: ['angular', 'typescript'],
+        title: 'Games Adaptation for iOS',
+        description: `I was part of a dedicated team that adapted eight PC-based Hidden Object Puzzle Adventure (HOPA) games for iOS platforms. Our collaborative process began with thoroughly testing the original PC games to understand their mechanics and user interactions. We then redesigned controls to suit touch interfaces, ensuring commands were intuitive on smaller screens. That included creating more extensive touchpoints to accommodate finger inputs and enhance user experience.
+
+We utilized 3ds Max for deconstructing and reconstructing scenes and Photoshop for adjusting specific graphics to fit the mobile format. Additionally, we developed supplementary screens, like upsell and sneak peek pages, using Photoshop and After Effects to enrich the gaming experience. Despite having dedicated testers, our team was actively involved in continuous testing to maintain high-quality standards throughout the adaptation process.
+`,
+        technologies: [
+          'photoshop',
+          'after-effects',
+          '3dmax',
+          'javascript',
+          'svn',
+        ],
       },
     ],
   },
