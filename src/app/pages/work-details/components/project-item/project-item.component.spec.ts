@@ -8,12 +8,17 @@ describe('ProjectItemComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [ProjectItemComponent]
-    })
-    .compileComponents();
+      imports: [ProjectItemComponent],
+    }).compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(ProjectItemComponent);
     component = fixture.componentInstance;
+    component.project = {
+      title: 'Test Project Title',
+      description: 'Test Project Description',
+    };
     fixture.detectChanges();
   });
 

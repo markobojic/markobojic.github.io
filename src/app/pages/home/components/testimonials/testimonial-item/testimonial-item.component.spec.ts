@@ -10,9 +10,17 @@ describe('TestimonialItemComponent', () => {
     await TestBed.configureTestingModule({
       imports: [TestimonialItemComponent],
     }).compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(TestimonialItemComponent);
     component = fixture.componentInstance;
+    component.testimonial = {
+      name: 'Test Name',
+      feedback: 'Test Feedback',
+      position: 'Test Position',
+      imageSrc: 'Test Image Src',
+    };
     fixture.detectChanges();
   });
 

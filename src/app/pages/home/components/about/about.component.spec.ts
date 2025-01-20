@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { AboutComponent } from './about.component';
 
 describe('AboutComponent', () => {
@@ -8,10 +7,11 @@ describe('AboutComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [AboutComponent]
-    })
-    .compileComponents();
+      imports: [AboutComponent],
+    }).compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(AboutComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
@@ -19,5 +19,11 @@ describe('AboutComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should emit scrollToCompanies event on onScrollToCompanies call', () => {
+    spyOn(component.scrollToCompanies, 'emit');
+    component.onScrollToCompanies();
+    expect(component.scrollToCompanies.emit).toHaveBeenCalled();
   });
 });

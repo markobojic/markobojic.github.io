@@ -8,12 +8,18 @@ describe('CompanyItemComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [CompanyItemComponent]
-    })
-    .compileComponents();
+      imports: [CompanyItemComponent],
+    }).compileComponents();
+  });
 
+  beforeEach(() => {
     fixture = TestBed.createComponent(CompanyItemComponent);
     component = fixture.componentInstance;
+    component.company = {
+      name: 'Company Name',
+      url: 'url',
+      imgSrc: 'imgSrc',
+    };
     fixture.detectChanges();
   });
 
