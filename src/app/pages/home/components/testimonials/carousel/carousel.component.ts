@@ -71,7 +71,7 @@ export class CarouselComponent implements AfterContentInit {
     this._setSlidePosition();
 
     // Prevent vertical scrolling only if user moves left or right
-    if (event.type.includes('touch') && Math.abs(deltaX) > 0) {
+    if (event.type.includes('touch') && Math.abs(deltaX) > 5) {
       event.preventDefault();
     }
   }
