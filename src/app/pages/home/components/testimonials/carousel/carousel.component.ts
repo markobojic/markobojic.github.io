@@ -1,4 +1,3 @@
-import { NgFor } from '@angular/common';
 import {
   AfterContentInit,
   Component,
@@ -14,7 +13,7 @@ import {
 @Component({
   selector: 'app-carousel',
   standalone: true,
-  imports: [NgFor],
+  imports: [],
   templateUrl: './carousel.component.html',
   styleUrl: './carousel.component.scss',
 })
@@ -70,6 +69,11 @@ export class CarouselComponent implements AfterContentInit {
     const deltaX = currentX - this.startX;
     this.currentTranslate = this.prevTranslate + deltaX;
     this._setSlidePosition();
+
+    // Prevent vertical scrolling only if user moves left or right
+    if (event.type.includes('touch') && Math.abs(deltaX) > 0) {
+      event.preventDefault();
+    }
   }
 
   onDragEnd() {
