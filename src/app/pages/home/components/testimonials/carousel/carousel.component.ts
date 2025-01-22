@@ -81,9 +81,9 @@ export class CarouselComponent implements AfterContentInit {
 
     // Check if drag distance is enough to switch slide
     const movedBy = this.currentTranslate - this.prevTranslate;
-    if (movedBy < -100 && this.currentSlide < this.totalSlides - 1) {
+    if (movedBy < -50 && this.currentSlide < this.totalSlides - 1) {
       this.currentSlide++;
-    } else if (movedBy > 100 && this.currentSlide > 0) {
+    } else if (movedBy > 50 && this.currentSlide > 0) {
       this.currentSlide--;
     }
 
