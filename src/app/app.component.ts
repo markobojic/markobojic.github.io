@@ -23,7 +23,15 @@ export class AppComponent {
   onAnimationDone() {
     this.transitionService.setTransitioning(false);
   }
+
+  isMobileDevice(): boolean {
+    return window.innerWidth <= 1024;
+  }
+
   prepareRoute(outlet: RouterOutlet) {
+    if (this.isMobileDevice()) {
+      return null;
+    }
     return (
       outlet &&
       outlet.activatedRouteData &&
