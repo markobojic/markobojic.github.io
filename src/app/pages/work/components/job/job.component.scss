@@ -34,10 +34,10 @@
       transform: rotate(-45deg) translate(-5px, -5px);
     }
   }
-}
 
-:host(:not(:hover)) .arrow {
-  transform: rotate(-45deg) translate(-15px, -15px);
+  &:not(:hover) .arrow {
+    transform: rotate(-45deg) translate(-15px, -15px);
+  }
 }
 
 @media (min-width: 1024px) {
