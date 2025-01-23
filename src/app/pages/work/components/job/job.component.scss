@@ -28,12 +28,6 @@
     transform: rotate(-45deg) translate(-15px, -15px);
     transition: transform 0.3s ease-out;
   }
-
-  &:hover {
-    .arrow {
-      transform: rotate(-45deg) translate(-5px, -5px);
-    }
-  }
 }
 
 @media (min-width: 1024px) {
@@ -45,6 +39,12 @@
     .arrow {
       position: relative;
       top: -0.5rem;
+
+      &:hover {
+        .arrow {
+          transform: rotate(-45deg) translate(-5px, -5px);
+        }
+      }
     }
   }
 }
