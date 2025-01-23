@@ -25,18 +25,16 @@
     height: 1rem;
     border-bottom: 2px solid var(--secondary-color);
     border-right: 2px solid var(--secondary-color);
-    transform: rotate(-45deg) translate(-15px, -15px);
-    transition: transform 0.3s ease-out;
+    transform: rotate(-45deg);
+    position: relative;
+    left: -15px;
+    transition: left 0.3s ease-out;
   }
 
   &:hover {
     .arrow {
-      transform: rotate(-45deg) translate(-5px, -5px);
+      left: -5px;
     }
-  }
-
-  &:not(:hover) .arrow {
-    transform: rotate(-45deg) translate(-15px, -15px);
   }
 }
 
