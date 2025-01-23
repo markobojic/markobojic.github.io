@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ActivatedRoute } from '@angular/router';
 
 import { HeaderComponent } from './header.component';
+import { NavLinkComponent } from '../nav-link/nav-link.component';
 
 describe('HeaderComponent', () => {
   let component: HeaderComponent;
@@ -9,7 +10,7 @@ describe('HeaderComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [HeaderComponent],
+      imports: [HeaderComponent, NavLinkComponent],
       providers: [
         { provide: ActivatedRoute, useValue: { snapshot: { data: {} } } },
       ],

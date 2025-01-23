@@ -8,30 +8,9 @@ header {
     top: 1rem;
     left: 2rem;
     right: 2rem;
-  }
-}
 
-.nav-link {
-  font-size: 10px;
-  line-height: 10px;
-  font-weight: 500;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding-bottom: 2px;
-  width: 48px;
-  overflow: hidden;
-
-  &.active {
-    border-bottom: 1px solid var(--secondary-color);
-  }
-}
-
-.theme-btn {
-  @media screen and (min-width: 1200px) {
-    position: fixed;
-    top: 50%;
-    transform: translateX(-50%);
-    right: 2rem;
+    .work-link {
+      display: none;
+    }
   }
 }
