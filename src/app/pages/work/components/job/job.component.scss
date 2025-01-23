@@ -36,6 +36,10 @@
   }
 }
 
+:host(:not(:hover)) .arrow {
+  transform: rotate(-45deg) translate(-15px, -15px);
+}
+
 @media (min-width: 1024px) {
   :host(:first-child) h2 {
     margin-top: 0;
