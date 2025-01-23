@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NavLinkComponent } from './nav-link.component';
+import { ActivatedRoute } from '@angular/router';
 
 describe('NavLinkComponent', () => {
   let component: NavLinkComponent;
@@ -8,9 +9,11 @@ describe('NavLinkComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [NavLinkComponent]
-    })
-    .compileComponents();
+      imports: [NavLinkComponent],
+      providers: [
+        { provide: ActivatedRoute, useValue: { snapshot: { data: {} } } },
+      ],
+    }).compileComponents();
 
     fixture = TestBed.createComponent(NavLinkComponent);
     component = fixture.componentInstance;

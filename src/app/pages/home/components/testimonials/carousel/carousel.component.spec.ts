@@ -130,4 +130,40 @@ describe('CarouselComponent', () => {
     component.onDragEnd();
     expect(component.currentSlide).toBe(1);
   });
+
+  it('should prevent vertical scrolling if user moves left or right more than 5 pixels', () => {
+    const touchEvent = new TouchEvent('touchmove', {
+      touches: [new Touch({ identifier: 0, target: window, clientX: 100 })],
+    });
+
+    const startEvent = new TouchEvent('touchstart', {
+      touches: [new Touch({ identifier: 0, target: window, clientX: 90 })],
+    });
+
+    component.onDragStart(startEvent);
+
+    spyOn(touchEvent, 'preventDefault');
+
+    component.onDragMove(touchEvent);
+
+    expect(touchEvent.preventDefault).toHaveBeenCalled();
+  });
+
+  it('should not prevent vertical scrolling if user moves left or right 5 pixels or less', () => {
+    const touchEvent = new TouchEvent('touchmove', {
+      touches: [new Touch({ identifier: 0, target: window, clientX: 95 })],
+    });
+
+    const startEvent = new TouchEvent('touchstart', {
+      touches: [new Touch({ identifier: 0, target: window, clientX: 90 })],
+    });
+
+    component.onDragStart(startEvent);
+
+    spyOn(touchEvent, 'preventDefault');
+
+    component.onDragMove(touchEvent);
+
+    expect(touchEvent.preventDefault).not.toHaveBeenCalled();
+  });
 });
