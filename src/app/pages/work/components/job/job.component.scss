@@ -25,21 +25,26 @@
     height: 1rem;
     border-bottom: 2px solid var(--secondary-color);
     border-right: 2px solid var(--secondary-color);
-    transform: rotate(-45deg);
-    position: relative;
-    left: -15px;
-    transition: left 0.3s ease-out;
+    transform: rotate(-45deg) translate(-15px, -15px);
+    transition: transform 0.3s ease-out;
   }
 
   &:hover {
     .arrow {
-      left: -5px;
+      transform: rotate(-45deg) translate(-5px, -5px);
     }
   }
 }
 
 @media (min-width: 1024px) {
-  :host(:first-child) h2 {
-    margin-top: 0;
+  :host(:first-child) {
+    h2 {
+      margin-top: 0;
+    }
+
+    .arrow {
+      position: relative;
+      top: -0.5rem;
+    }
   }
 }
