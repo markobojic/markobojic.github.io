@@ -1,11 +1,9 @@
 <header>
-  <a
-    routerLink="/"
-    routerLinkActive="active"
-    [routerLinkActiveOptions]="{ exact: true }"
-    class="nav-link"
-    >Home</a
-  >
+  <app-nav-link routerLink="/" linkText="Home"></app-nav-link>
   <app-theme-button class="theme-btn"></app-theme-button>
-  <a routerLink="/work" routerLinkActive="active" class="nav-link">Work</a>
+  <app-nav-link
+    routerLink="/work"
+    linkText="Work"
+    class="work-link"
+  ></app-nav-link>
 </header>
