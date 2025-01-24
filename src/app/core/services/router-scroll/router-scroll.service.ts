@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
+import { Router, Scroll } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
 
 @Injectable({
@@ -11,7 +11,7 @@ export class RouterScrollService {
     private viewportScroller: ViewportScroller
   ) {
     this.router.events.subscribe((event) => {
-      if (event instanceof NavigationEnd) {
+      if (event instanceof Scroll) {
         this.viewportScroller.scrollToPosition([0, 0]);
       }
     });
