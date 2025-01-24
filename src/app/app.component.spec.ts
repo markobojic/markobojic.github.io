@@ -61,4 +61,10 @@ describe('AppComponent', () => {
     component.onAnimationDone();
     expect(transitionService.setTransitioning).toHaveBeenCalledWith(false);
   });
+
+  it('should return null if isMobileDevice returns true', () => {
+    spyOn(component, 'isMobileDevice').and.returnValue(true);
+    const outlet = {} as RouterOutlet;
+    expect(component.prepareRoute(outlet)).toBeNull();
+  });
 });

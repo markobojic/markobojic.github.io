@@ -25,7 +25,7 @@ export class AppComponent {
   }
 
   isMobileDevice(): boolean {
-    return window.innerWidth <= 1024;
+    return typeof window !== 'undefined' && window.innerWidth <= 1024;
   }
 
   prepareRoute(outlet: RouterOutlet) {
