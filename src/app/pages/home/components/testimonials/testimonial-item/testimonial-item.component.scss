@@ -3,6 +3,8 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
+  user-select: none;
+  cursor: pointer;
 
   .testimonial-image {
     width: 5rem;
