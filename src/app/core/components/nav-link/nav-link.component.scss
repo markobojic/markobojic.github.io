@@ -16,11 +16,11 @@
     cursor: default;
   }
 
-  @media screen and (max-width: 1200px) {
-    &:not(.active):hover {
-      text-decoration: none;
-    }
+  &:not(.active):hover {
+    text-decoration: none;
+  }
 
+  @media screen and (min-width: 1200px) {
     &:not(.active)::after {
       content: "";
       position: absolute;
